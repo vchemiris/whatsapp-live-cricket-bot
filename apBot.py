@@ -57,10 +57,7 @@ def return_score(id):
 
 #Returns detailed information about the matches through return_score() function
 def return_detailed_info(matches):
-    """
-    matches: list of the matches
-    """
-    allPresent=[]
+    allPresent = []
     for each in matches:
         allPresent.append(return_score(each["unique_id"]))
     return allPresent
